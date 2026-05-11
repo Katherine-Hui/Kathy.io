@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息文档目录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: #fff;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 30px;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1em;
+            color: #666;
+        }
+
+        .toc-section {
+            background-color: #f9f9f9;
+            border-left: 4px solid #0066cc;
+            padding: 25px;
+            margin-bottom: 40px;
+            border-radius: 4px;
+        }
+
+        .toc-section h2 {
+            color: #0066cc;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .toc-list {
+            list-style: none;
+        }
+
+        .toc-list li {
+            margin: 12px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .toc-list li:before {
+            content: "▶";
+            position: absolute;
+            left: 0;
+            color: #0066cc;
+        }
+
+        .toc-list a {
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 1.05em;
+            transition: all 0.3s ease;
+        }
+
+        .toc-list a:hover {
+            color: #005a99;
+            text-decoration: underline;
+        }
+
+        .content-section {
+            margin: 40px 0;
+            padding: 20px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            scroll-margin-top: 80px;
+        }
+
+        .content-section h3 {
+            color: #0066cc;
+            font-size: 1.3em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .content-section p {
+            margin: 10px 0;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .toc-section h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📋 信息文档中心</h1>
+            <p class="subtitle">完整的索引和导航指南</p>
+        </header>
+
+        <section class="toc-section">
+            <h2>📑 目录</h2>
+            <ul class="toc-list">
+                <li><a href="#section-1">1. 项目概述</a></li>
+                <li><a href="#section-2">2. 快速开始</a></li>
+                <li><a href="#section-3">3. 功能特性</a></li>
+                <li><a href="#section-4">4. 使用指南</a></li>
+                <li><a href="#section-5">5. 常见问题</a></li>
+                <li><a href="#section-6">6. 联系我们</a></li>
+            </ul>
+        </section>
+
+        <section id="section-1" class="content-section">
+            <h3>1. 项目概述</h3>
+            <p>
+                本项目是一个综合性的信息文档中心，旨在为用户提供清晰、有序的信息架构和易于使用的导航体验。
+                该平台集成了多个部分的内容，帮助用户快速了解项目的核心功能和使用方式。
+            </p>
+        </section>
+
+        <section id="section-2" class="content-section">
+            <h3>2. 快速开始</h3>
+            <p>
+                要快速开始使用本平台，请按照以下步骤进行：
+            </p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>浏览上方的目录导航</li>
+                <li>点击感兴趣的部分了解详细信息</li>
+                <li>如有疑问，请参考常见问题部分</li>
+            </ul>
+        </section>
+
+        <section id="section-3" class="content-section">
+            <h3>3. 功能特性</h3>
+            <p>
+                本平台提供以下主要功能特性：
+            </p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>响应式设计</strong> - 支持各种设备和屏幕尺寸</li>
+                <li><strong>快速导航</strong> - 清晰的目录结构便于浏览</li>
+                <li><strong>现代化界面</strong> - 简洁美观的用户界面</li>
+                <li><strong>易于访问</strong> - 优化的代码和快速加载速度</li>
+            </ul>
+        </section>
+
+        <section id="section-4" class="content-section">
+            <h3>4. 使用指南</h3>
+            <p>
+                本章节提供了详细的使用指南，帮助您充分利用平台的各项功能。
+                请根据您的需求选择相应的部分进行深入了解。
+            </p>
+        </section>
+
+        <section id="section-5" class="content-section">
+            <h3>5. 常见问题</h3>
+            <p>
+                <strong>问：</strong>我应该从何处开始？<br>
+                <strong>答：</strong>建议从"项目概述"开始，然后按照目录逐一浏览。
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>问：</strong>这个平台支持移动设备吗？<br>
+                <strong>答：</strong>是的，平台采用响应式设计，完全支持各种移动设备。
+            </p>
+        </section>
+
+        <section id="section-6" class="content-section">
+            <h3>6. 联系我们</h3>
+            <p>
+                如有任何问题或建议，欢迎通过以下方式与我们联系：
+            </p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>📧 邮箱：contact@example.com</li>
+                <li>💬 在线反馈表单</li>
+                <li>🐦 社交媒体联系</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 信息文档中心. 保留所有权利。</p>
+            <p>最后更新于：2026年5月11日</p>
+        </footer>
+    </div>
+</body>
+</html>
